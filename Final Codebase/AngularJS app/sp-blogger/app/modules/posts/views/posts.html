@@ -1,0 +1,8 @@
+<div class="row">
+		<div class="col-xs-3" ng-repeat="post in posts | orderBy:'-_id'">
+			<div class="well">
+				<h3 class="postTitle"><a ui-sref="singlePost({id:post._id,permalink:post.permalink})">{{post.title}}</a></h3>
+				<h5>By: {{post.author}} | {{post.datePublished | date:'MM-dd-yyyy'}}</h5>
+			</div>
+		</div>
+</div>

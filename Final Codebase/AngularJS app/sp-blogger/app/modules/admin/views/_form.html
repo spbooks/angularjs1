@@ -1,0 +1,35 @@
+<div class="form-group" ng-class="{'has-error':postForm.title.$dirty && postForm.title.$invalid}">
+    <label for="title" class="col-sm-2 control-label">Post Title</label>
+    <div class="col-sm-10">
+        <input type="text" name="title" ng-model="post.title" ng-required="true" class="form-control" id="title" placeholder="Title">
+        <span>Permalink:<i>/posts/[id]/{{post.title | permalink}}</i></span> <br/>
+        <span class="error-message" ng-show="postForm.title.$dirty && postForm.title.$invalid">Title is mandatory boss!</span>
+    </div>
+</div>
+<div class="form-group" ng-class="{'has-error':postForm.content.$dirty && postForm.content.$invalid}">
+    <label for="content" class="col-sm-2 control-label">Content</label>
+    <div class="col-sm-10">
+        <textarea cols="8" rows="6" name="content" class="form-control" ng-model="post.content" ng-required="true" id="content" placeholder="Content"></textarea>
+        <span>{{post.content | wordcount}} words</span> <br/>
+        <span class="error-message" ng-show="postForm.content.$dirty && postForm.content.$invalid">You need to have some content!</span>
+    </div>
+</div>
+<div class="form-group" ng-class="{'has-error':postForm.tags.$dirty && postForm.tags.$invalid}">
+    <label for="tags" class="col-sm-2 control-label">Tags</label>
+    <div class="col-sm-10">
+        <input type="text" name="tags" class="form-control" id="tags" ng-pattern="/^[\w,]+$/" ng-model="post.tags" placeholder="Comma separated tags"/>
+        <span class="error-message" ng-show="postForm.tags.$dirty && postForm.tags.$invalid">Sorry! No special characters allowed here.</span>
+    </div>
+</div>
+<div class="form-group" ng-class="{'has-error':postForm.keywords.$dirty && postForm.keywords.$invalid}">
+    <label for="keywords" class="col-sm-2 control-label">Keywords</label>
+    <div class="col-sm-10">
+        <input type="text" name="keywords" class="form-control" id="keywords" ng-pattern="/^[\w,]+$/"  ng-model="post.keywords" placeholder="Comma separated keywords"/>
+        <span class="error-message" ng-show="postForm.keywords.$dirty && postForm.keywords.$invalid">Sorry! No special characters allowed here</span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success" ng-disabled="postForm.$invalid">{{buttonText}}</button>
+    </div>
+</div>

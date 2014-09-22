@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-8">
+        <table class="table">
+            <tr>
+                <td><h3>View All Posts</h3></td>
+                <td></td>
+            </tr>
+            <tr ng-repeat="post in posts | orderBy:'-_id'">
+                <td>{{post.title}}</td>
+                <td>
+                    <a class="btn btn-primary" ui-sref="admin.postUpdate({id:post._id})">Edit</a>
+                    <a class="btn btn-danger"  ng-click="deletePost(post)">Delete</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

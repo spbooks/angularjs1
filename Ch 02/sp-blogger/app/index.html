@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Single Page Blogger</title>
+  <script type="text/javascript" src="lib/angular/angular-loader.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/script.js/2.4.0/script.min.js"></script>
+  <script type="text/javascript">
+    $script([
+	  'lib/angular/angular.js',	
+      'js/controllers.js',
+	  'js/directives.js',
+	  'js/services.js',
+	  'js/filters.js',
+	  'js/app.js',
+	  'modules/posts/postModule.js',
+      'modules/posts/js/services.js',
+      'modules/posts/js/controllers.js',
+      'modules/posts/js/filters.js',
+      'modules/posts/js/directives.js'
+    ], function() {
+      angular.bootstrap(document, ['spBlogger']);
+    });
+  </script>
+</head>
+<body>
+  <!-- The Content Goes here. We will develop this-->
+  <i>The Single Page Blogger <app-version/></i>
+</body>
+</html>

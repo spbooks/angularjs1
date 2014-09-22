@@ -1,0 +1,19 @@
+{
+  "name": "Single Page Blogger",
+  "description": "A Single Page Blogging app built with angularJS",
+  "devDependencies": {
+    "karma": "~0.10",
+    "karma-chrome-launcher": "^0.1.2",
+    "karma-jasmine": "^0.2.2",
+    "karma-junit-reporter": "^0.2.1",
+    "karma-ng-html2js-preprocessor": "^0.1.0",
+    "phantomjs": "~1.9",
+    "protractor": "~0.17.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-usemin": "~2.0.2",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}

@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-3">
+
+        <ul class="nav nav-pills nav-stacked on-click-make-active">
+            <li ui-sref-active="active"><a ui-sref="admin.postViewAll">View All Posts</a></li>
+            <li ui-sref-active="active"><a ui-sref="admin.postNew">Add Post</a></li>
+            <li><a href ng-click="logout()">Logout</a></li>
+        </ul>
+
+    </div>
+
+
+    <div class="col-xs-9 border-left">
+        <div ui-view></div>
+    </div>
+
+</div>

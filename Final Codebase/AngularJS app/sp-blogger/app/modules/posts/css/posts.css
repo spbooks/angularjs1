@@ -1,0 +1,35 @@
+.postTitle{
+	margin: 0;
+}
+.cross-btn{
+	cursor:pointer;
+	font-size:22px;
+	font-weight:bold;
+}
+.postContent{
+	text-align:justify;
+}
+.bottom-buffer{
+    margin-bottom:10px;
+}
+.small-button{
+    width:100px;
+}
+.single-comment{
+    margin-bottom: 20px;
+    padding:20px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+}
+.single-comment .info{
+    font-size:12px;
+    color:#999;
+}
+.single-comment .content{
+    font-size:16px;
+    color:#333;
+    margin-bottom:10px;
+}
+.single-comment .info{
+
+}

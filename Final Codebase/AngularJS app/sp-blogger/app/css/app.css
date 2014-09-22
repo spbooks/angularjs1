@@ -1,0 +1,228 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #eeeeee;
+    font-size: 14px;
+}
+
+.container .jumbotron{
+    background: #444444;
+    border-radius: 0;
+}
+
+.jumbotron h1{
+    color: #ffffff;
+}
+
+.jumbotron p{
+    color: #cccccc;
+}
+
+.well{
+    border-radius: 0;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.well:hover{
+    background: #ffffff;
+}
+
+.well:active{
+    box-shadow: none;
+}
+
+.well h5{
+    color: #999;
+}
+
+.postTitle{
+    margin: 0;
+}
+
+.postTitle a{
+    display: block;
+    color: #18B29D;
+    text-decoration: none;
+}
+.cross-btn{
+    cursor:pointer;
+    font-size:22px;
+    font-weight:bold;
+}
+.postContent{
+    text-align:justify;
+}
+.bottom-buffer{
+    margin-bottom:10px;
+}
+.small-button{
+    width:100px;
+}
+.single-comment{
+    margin-bottom: 20px;
+    padding:20px;
+    border: 1px solid #ccc;
+    background: #eeeeee;
+    margin-left: 10px;
+    border-left: 5px solid #ccc;
+}
+.single-comment .info{
+    font-size:12px;
+    color:#999;
+}
+.single-comment .content{
+    font-size:16px;
+    color:#333;
+    margin-bottom:10px;
+}
+.single-comment .info{
+
+}
+.border-left{
+    border-left: 1px solid #ccc;
+}
+span.error-message{
+    color:red;
+}
+.table tr:nth-child(1) td{
+    border-top:none;
+}
+.table h3{
+    margin:0;
+}
+.footer{
+    clear:both;
+    margin-top:30px;
+    border-top:1px solid #ccc;
+    padding: 20px;
+}
+
+.single-comment.ng-enter{
+    -webkit-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    -moz-transition: 1s linear all;
+    opacity: 0;
+}
+.single-comment.ng-enter.ng-enter-active{
+    opacity:1;
+}
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+
+.error-login{
+    color:'red';
+}
+
+.singlePost{
+    background: #FFF;
+}
+
+.singlePost h1{
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.singlePost h5{
+    color: #999999;
+}
+
+.postContent{
+    color: #444444;
+    padding-top: 10px;
+}
+
+.comments h3{
+    font-size: 2em;
+    color: #999999;
+    margin-bottom: 0;
+}
+
+.comments h4{
+    color: #999999;
+}
+
+.comments .form-control{
+    border-radius: 0;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.comments .btn{
+    border-radius: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+.notice{
+    text-align:center;
+}
